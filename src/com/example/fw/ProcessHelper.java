@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class ProcessHelper extends HelpersBase {
 
-	private Process exec;
+	private Process process;
 
 
 	public ProcessHelper(ApplicationManager applicationManager) {
@@ -14,12 +14,12 @@ public class ProcessHelper extends HelpersBase {
 
 	public void startAppUnderTest() throws IOException {
 		String command = manager.getProperty("app.path");
-		exec = Runtime.getRuntime().exec(command);
+		process = Runtime.getRuntime().exec(command);
 		
 		}
 
 
 	public void stopAppUnderTest() {
-		exec.destroy();
+		process.destroy();
 		}
 }

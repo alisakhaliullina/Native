@@ -27,7 +27,10 @@ public class ApplicationManager {
 	
 	private ContactHelper contactHelper;
 	private ProcessHelper processHelper;
-	
+	private AutoItHelper autoItHelper;
+
+
+		
 	public void start() throws IOException {
 	
 		getProcessHelper().startAppUnderTest();
@@ -70,6 +73,15 @@ public class ApplicationManager {
 		
 	}
 
+
+	public AutoItHelper getAutoItHelper() {
+		if (autoItHelper == null) {
+			autoItHelper = new AutoItHelper(this);
+	}
+		return autoItHelper;
+		
+	}
+	
 	public static ApplicationManager getInstance() {
 				return singletone;
 	}

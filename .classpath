@@ -4,6 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Selenium2.46"/>
 	<classpathentry kind="var" path="TESTNG_HOME/lib/testng.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JACOB"/>
+	<classpathentry kind="lib" path="lib/AutoItX4Java.jar"/>
+	<classpathentry kind="lib" path="lib/jacob.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
